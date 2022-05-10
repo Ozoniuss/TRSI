@@ -1,6 +1,7 @@
-from enum import Enum
-import glob
+import glob 
 
+# FLOWERS_LABELS is a dictionary mapping the flower categories to their 
+# corresponding neuron in the output layer.
 FLOWERS_LABELS = {
     "roses": 0,
     "daisy": 1,
@@ -10,6 +11,10 @@ FLOWERS_LABELS = {
 }
 
 def get_flower_paths(data_dir):
+    """
+    Returns a dictionary containing a list of all the paths of the flowers in 
+    each category.
+    """
     return {
         "roses": glob.glob(f'{data_dir}/roses/*', recursive=True),
         "daisy": glob.glob(f'{data_dir}/daisy/*', recursive=True),
