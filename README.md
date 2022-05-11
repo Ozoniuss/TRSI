@@ -1,4 +1,4 @@
-# Implementing a Machine Learning classificatino model using Transfer Learning
+# Implementing a Machine Learning classification model using Transfer Learning
 
 This repository implements a machine learning model that predicts the classification of a flower image in 5 different categories. The model is implemented using the [MobileNet v2 Feature Vector](https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4) to which an output layer with 5 neurons is attached.
 
